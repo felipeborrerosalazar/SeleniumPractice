@@ -10,17 +10,17 @@ public class SearchWordTestCase extends TestCase{
 	
 	@BeforeSuite
 	public void setUp() {
-		// go to www.genbeta.com
-		init("https://www.genbeta.com");
+		// go to www.allianz-assistance.es
+		init("https://www.allianz-assistance.es/");
 	}
 	
 	@Test
 	public void searchWordTest() {
-		final String preffix = "Los creadores de";
+		final String preffix = "tarjeta de crédito";
 		SearchWordAction searchWordAction = new SearchWordAction(driver);
 		searchWordAction.acceptCokies();
-		final String result = searchWordAction.searchWord("metaverso");
-		Assert.assertTrue(result.startsWith(preffix));
+		final String result = searchWordAction.searchWord("Seguro de Viaje");
+		Assert.assertTrue(result.contains(preffix));
 		System.out.println("Test Completed Successfully");
 	}
 
