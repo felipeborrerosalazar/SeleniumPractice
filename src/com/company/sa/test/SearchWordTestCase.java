@@ -16,7 +16,7 @@ public class SearchWordTestCase extends TestCase{
 	
 	@Test
 	public void searchWordTest() {
-		final String preffix = "Los creadores de";
+		final String preffix = "Ni Google Ni Facebook";
 		SearchWordAction searchWordAction = new SearchWordAction(driver);
 		searchWordAction.acceptCokies();
 		final String result = searchWordAction.searchWord("metaverso");

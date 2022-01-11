@@ -4,9 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+
 public class SearchWordPage {
 
 	private static WebElement element = null;
+	
 	
 	public static WebElement getSearchMenu(final WebDriver driver) {
 		element = driver.findElement(By.xpath("//li[@class=\'masthead-actions-list-item\']//a[@href=\'#sections\']"));
